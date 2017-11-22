@@ -6,7 +6,7 @@ from coala_utils.decorators import generate_ordering
 
 @generate_ordering('timestamp', 'id', 'rtid', 'text', 'user', 'replies', 'retweets', 'likes')
 class Tweet:
-    def __init__(self, user, id, timestamp, fullname, text, replies, retweets, likes):
+    def __init__(self, user, id, rtid, timestamp, fullname, text, replies, retweets, likes):
         self.user = user
         self.id = id
         self.rtid = rtid
